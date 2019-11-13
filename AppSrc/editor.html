@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+    <title>Fury</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://bit.ly/ICONKIT" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-menu bg-dark" style="position:relative;">
+      <div class="menu-item dropdown">
+        <label class="dropdown-toggle" data-toggle="dropdown" style="color:white;">File</label>
+        <div class="dropdown-menu">
+          <label class="dropdown-item" onclick="newFile()">New</label>
+          <label class="dropdown-item" onclick="openFile()">Open</label>
+          <label class="dropdown-item" onclick="saveFile()">Save</label>
+          <label class="dropdown-item" onclick="saveFileAs()">Save As</label>
+          <div class="dropdown-divider"></div>
+          <label class="dropdown-item" onclick="exitFile()">Exit</label>
+        </div>
+      </div>
+      <div class="menu-item dropdown" style="position:absolute; top:0px; left:50px;">
+        <label class="dropdown-toggle" data-toggle="dropdown" style="color:white;">Edit</label>
+        <div class="dropdown-menu">
+          <label class="dropdown-item" onclick="undoEdit()">Undo</label>
+          <label class="dropdown-item" onclick="redoEdit()">Redo</label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
